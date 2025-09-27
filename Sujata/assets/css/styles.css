@@ -1,0 +1,177 @@
+/* ===========================
+   Sujata Associates - Custom Styles
+   =========================== */
+
+/* Global Smooth Transitions */
+a,
+button,
+input,
+select,
+textarea {
+  transition: all 0.3s ease;
+}
+
+/* Body & Typography */
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* Sticky Navbar with smooth shadow */
+header.sticky-nav {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Hero Animation */
+.fade-in {
+  animation: fadeInUp 0.8s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.75rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.btn-yellow {
+  background: linear-gradient(90deg, #facc15, #eab308);
+  color: #1f2937;
+}
+
+.btn-yellow:hover {
+  background: linear-gradient(90deg, #fde047, #facc15);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs & Form Elements */
+input,
+select,
+textarea {
+  outline: none;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #facc15;
+  box-shadow: 0 0 0 4px rgba(250, 204, 21, 0.35);
+}
+
+/* Mobile Menu Links */
+#mobileMenu a {
+  display: block;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+#mobileMenu a:hover {
+  color: #facc15;
+}
+
+/* Accordion (FAQ Section) */
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-body {
+  display: none;
+  padding: 0 1rem 1rem;
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+  animation: fadeInUp 0.4s ease both;
+}
+
+/* Scroll Down Button */
+#scrollDownBtn {
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#scrollDownBtn:hover {
+  color: #facc15;
+  transform: translateY(4px);
+}
+
+/* Service Cards */
+.service-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: #9ca3af;
+}
+
+footer a {
+  color: #d1d5db;
+}
+
+footer a:hover {
+  color: #facc15;
+}
+/* Fade-in on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}

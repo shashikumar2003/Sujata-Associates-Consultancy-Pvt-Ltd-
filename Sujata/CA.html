@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CA Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Glow pulse animation */
+    @keyframes glowPulse {
+      0% {
+        box-shadow: 0 0 5px rgba(34, 197, 94, 0.4),
+                    0 0 10px rgba(34, 197, 94, 0.3);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(34, 197, 94, 0.8),
+                    0 0 40px rgba(34, 197, 94, 0.6);
+      }
+      100% {
+        box-shadow: 0 0 5px rgba(34, 197, 94, 0.4),
+                    0 0 10px rgba(34, 197, 94, 0.3);
+      }
+    }
+    .glow-card {
+      border: 2px solid transparent;
+      transition: all 0.3s ease;
+    }
+    .glow-card:hover {
+      border-color: #22c55e;
+      animation: glowPulse 2s infinite ease-in-out;
+      transform: translateY(-6px);
+    }
+
+    /* Fade-in animation for list items */
+    .fade-item {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.6s ease;
+    }
+    .fade-item.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Title pop-in */
+    .card-header {
+      opacity: 0;
+      transform: scale(0.8);
+      transition: all 0.6s ease;
+    }
+    .card-header.show {
+      opacity: 1;
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 shadow-md">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">CA Services</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="#" class="hover:text-green-400">Home</a>
+        <a href="#" class="hover:text-green-400">About</a>
+        <a href="#" class="hover:text-green-400">Services</a>
+        <a href="#" class="hover:text-green-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Professional CA & Compliance Services</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        One-stop solution for all your company registration, licensing, ROC changes, and compliance needs.
+      </p>
+    </div>
+  </section>
+
+  <!-- CA Services Grid -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 text-gray-100">
+
+        <!-- Registration Services -->
+        <div class="glow-card bg-gray-900 rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header flex items-center gap-2 mb-4">
+            <span class="text-green-400 text-2xl">📑</span>
+            <h3 class="text-lg font-semibold text-green-400">Registration Services</h3>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="proprietorship.html" class="hover:text-yellow-600">Proprietorship Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="partnership.html" class="hover:text-yellow-600">Partnership Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="one-person.html" class="hover:text-yellow-600">One Person Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="private-limited.html" class="hover:text-yellow-600">Private Limited Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="llp.html" class="hover:text-yellow-600">LLP Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="public-limited.html" class="hover:text-yellow-600">Public Limited Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="section-8.html" class="hover:text-yellow-600">Section 8 Company Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="nidhi.html" class="hover:text-yellow-600">Nidhi Company Registration</a></li>
+          </ul>
+        </div>
+
+        <!-- ROC Changes Services -->
+        <div class="glow-card bg-gray-900 rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-header flex items-center gap-2 mb-4">
+            <span class="text-green-400 text-2xl">⚙️</span>
+            <h3 class="text-lg font-semibold text-green-400">ROC Changes Services</h3>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="company-name-change.html" class="hover:text-yellow-600">Company Name Change</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="director-removal.html" class="hover:text-yellow-600">Director Removal</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="director-addition.html" class="hover:text-yellow-600">Director Addition</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="registered-office-change.html" class="hover:text-yellow-600">Registered Office Address Change</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="company-moa-amendment.html" class="hover:text-yellow-600">Company MOA Amendment</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="company-winding-up.html" class="hover:text-yellow-600">Company Winding Up</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="increase-authorized-capital.html" class="hover:text-yellow-600">Increase Authorized Capital</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="llp-closure.html" class="hover:text-yellow-600">LLP Closure</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="pvt-ltd-closure.html" class="hover:text-yellow-600">PVT. LTD. Closure</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="din-surrender.html" class="hover:text-yellow-600">DIN Surrender</a></li>
+          </ul>
+        </div>
+
+        <!-- Licensing Services -->
+        <div class="glow-card bg-gray-900 rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-header flex items-center gap-2 mb-4">
+            <span class="text-green-400 text-2xl">🛡️</span>
+            <h3 class="text-lg font-semibold text-green-400">Licensing Services</h3>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="trade-license.html" class="hover:text-yellow-600">Trade License Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="fssai.html" class="hover:text-yellow-600">FSSAI License Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="shop-establishment.html" class="hover:text-yellow-600">Shop & Establishment Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="fire-license.html" class="hover:text-yellow-600">Fire License Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="pollution-license.html" class="hover:text-yellow-600">Pollution License Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="iec.html" class="hover:text-yellow-600">Import Export Code Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="esi-pf.html" class="hover:text-yellow-600">ESI & PF Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="msme.html" class="hover:text-yellow-600">MSME Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="gst-registration.html" class="hover:text-yellow-600">GST Registration</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="gst-return.html" class="hover:text-yellow-600">GST Return Filing</a></li>
+          </ul>
+        </div>
+
+        <!-- Compliance Services -->
+        <div class="glow-card bg-gray-900 rounded-xl shadow-lg p-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-header flex items-center gap-2 mb-4">
+            <span class="text-green-400 text-2xl">✅</span>
+            <h3 class="text-lg font-semibold text-green-400">Compliance Services</h3>
+          </div>
+          <ul class="space-y-2 text-sm">
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="pvt-annual.html" class="hover:text-yellow-600">Pvt. Ltd. Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="llp-annual.html" class="hover:text-yellow-600">LLP Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="public-annual.html" class="hover:text-yellow-600">Public Limited Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="section-8-annual.html" class="hover:text-yellow-600">Section 8 Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="nidhi-annual.html" class="hover:text-yellow-600">Nidhi Company Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="proprietorship-annual.html" class="hover:text-yellow-600">Proprietorship Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="partnership-annual.html" class="hover:text-yellow-600">Partnership Annual Compliance</a></li>
+            <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="accounting.html" class="hover:text-yellow-600">Accounting Packages</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 CA Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Sequential animation: first header pops, then list items stagger
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".glow-card");
+
+      cards.forEach((card) => {
+        const header = card.querySelector(".card-header");
+        const items = card.querySelectorAll(".fade-item");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                header.classList.add("show");
+                items.forEach((item, i) => {
+                  setTimeout(() => {
+                    item.classList.add("show");
+                  }, 600 + i * 150);
+                });
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        observer.observe(card);
+      });
+    });
+  </script>
+</body>
+</html>

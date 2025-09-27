@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Services - Sujata Associates</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .glow-card {
+            border: 2px solid transparent;
+            border-radius: 1rem;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .glow-card:hover {
+            border-color: #10b981;
+            box-shadow: 0 0 20px rgba(16, 185, 129, 0.8);
+            animation: pulseGlow 2s infinite;
+        }
+
+        @keyframes pulseGlow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(16, 185, 129, 1);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-green-600 to-teal-600 text-white py-20 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold">Other Services</h1>
+        <p class="mt-4 text-lg max-w-2xl mx-auto">
+            Explore our international company registration services and IT/business support.
+        </p>
+    </section>
+
+    <!-- Service Grid -->
+    <section class="py-16 px-6 md:px-12">
+        <h2 class="text-3xl font-bold text-center mb-12">International Company Registration</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- USA -->
+            <a href="company-usa.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in USA</h3>
+                <p class="text-gray-600">Start your business in the United States with full compliance support.</p>
+            </a>
+
+            <!-- UK -->
+            <a href="company-uk.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in UK</h3>
+                <p class="text-gray-600">Incorporate your company in the United Kingdom with ease.</p>
+            </a>
+
+            <!-- Bangladesh -->
+            <a href="company-bangladesh.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in Bangladesh</h3>
+                <p class="text-gray-600">Set up your company in Bangladesh with expert advisory.</p>
+            </a>
+
+            <!-- Sri Lanka -->
+            <a href="company-srilanka.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in Sri Lanka</h3>
+                <p class="text-gray-600">Quick and reliable business incorporation in Sri Lanka.</p>
+            </a>
+
+            <!-- China -->
+            <a href="company-china.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in China</h3>
+                <p class="text-gray-600">Expand into China with legal and compliance guidance.</p>
+            </a>
+
+            <!-- Thailand -->
+            <a href="company-thailand.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in Thailand</h3>
+                <p class="text-gray-600">Register your business in Thailand with expert support.</p>
+            </a>
+
+            <!-- UAE -->
+            <a href="company-uae.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in UAE / Dubai</h3>
+                <p class="text-gray-600">Free Zone & Mainland company registration in Dubai.</p>
+            </a>
+
+            <!-- Singapore -->
+            <a href="company-singapore.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+                <h3 class="text-xl font-semibold text-green-600 mb-3">Company Registration in Singapore</h3>
+                <p class="text-gray-600">Incorporate in Singapore with world-class business facilities.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Web Services -->
+    <section class="py-16 px-6 md:px-12">
+        <a href="Web & IT Services.html" class="glow-card p-6 bg-white shadow-lg fade-in block">
+            <h3 class="text-xl font-semibold text-green-600 mb-3">Web Design & Software Development</h3>
+            <class="text-gray-700">We also provide website development, software solutions, and digital marketing
+                tailored to your business needs.</a>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="bg-green-700 text-white py-12 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold">Need Help With International Registration?</h2>
+        <p class="mt-4">Our experts are ready to guide you for global company formation.</p>
+        <a href="contact.html"
+            class="mt-6 inline-block px-6 py-3 bg-white text-green-700 font-semibold rounded-lg shadow hover:bg-gray-100 transition">Contact
+            Us</a>
+    </section>
+
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('show'); } });
+        }, { threshold: 0.2 });
+        items.forEach(item => observer.observe(item));
+    </script>
+
+</body>
+
+</html>

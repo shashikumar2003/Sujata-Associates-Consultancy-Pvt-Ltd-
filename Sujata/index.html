@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sujata Associates — Business & Compliance Solutions</title>
+  <meta name="description"
+    content="Company registration, GST, accounting, trademark & compliance services made easy with Sujata Associates." />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS (Animations) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/index.html" class="flex items-center gap-3 group">
+        <img src="https://sujataassociates.com/images/Logo-new-final.png" class="h-12 w-auto"
+          alt="Sujata Associates Logo">
+        <h1 class="text-xl font-semibold group-hover:text-yellow-600 transition">Sujata Associates</h1>
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="/index.html" class="hover:text-yellow-600">Home</a>
+        <a href="legal.html" class="hover:text-yellow-600">Legal Services</a>
+        <a href="CA.html" class="hover:text-yellow-600">CA Services</a>
+        <a href="Company Branding.html" class="hover:text-yellow-600">Company Branding</a>
+        <a href="Other Services.html" class="hover:text-yellow-600">Other Services</a>
+        <a href="/Company.html" class="hover:text-yellow-600">Company</a>
+      </nav>
+      <!-- Mobile Btn -->
+      <button id="mobileBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow px-6 py-4 space-y-3">
+      <a href="/index.html" class="hover:text-yellow-600">Home</a>
+      <a href="legal.html" class="hover:text-yellow-600">Legal Services</a>
+      <a href="CA.html" class="hover:text-yellow-600">CA Services</a>
+      <a href="Company Branding.html" class="hover:text-yellow-600">Company Branding</a>
+      <a href="Other Services.html" class="hover:text-yellow-600">Other Services</a>
+      <a href="/Company.html" class="hover:text-yellow-600">Company</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <!-- Text -->
+    <div data-aos="fade-right">
+      <h2 class="text-5xl font-extrabold mb-6 leading-tight">
+        Business, Tax & <span class="text-yellow-500">Compliance</span><br> Made Simple
+      </h2>
+      <p class="mb-8 text-lg text-gray-600">
+        From company registration to GST filing, accounting, and trademarks — we handle it all with expertise.
+      </p>
+      <a href="/services.html"
+        class="inline-block bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold shadow hover:bg-yellow-500 transition">
+        Explore Services →
+      </a>
+    </div>
+    <!-- Form -->
+    <div class="bg-white rounded-xl shadow-lg p-8" data-aos="fade-left">
+      <form class="space-y-5" id="consultForm">
+        <h3 class="text-xl font-bold mb-4">Free Consultation</h3>
+        <input type="text" name="name" required class="w-full border p-3 rounded focus:ring-2 focus:ring-yellow-400"
+          placeholder="Your Name" />
+        <input type="tel" name="phone" required class="w-full border p-3 rounded focus:ring-2 focus:ring-yellow-400"
+          placeholder="Mobile Number" />
+        <input type="email" name="email" class="w-full border p-3 rounded focus:ring-2 focus:ring-yellow-400"
+          placeholder="Email (optional)" />
+        <select name="service" class="w-full border p-3 rounded focus:ring-2 focus:ring-yellow-400">
+          <option>Company Registration</option>
+          <option>GST Registration</option>
+          <option>Accounting</option>
+          <option>Trademark</option>
+          <option>Compliance</option>
+        </select>
+        <button type="submit"
+          class="w-full bg-yellow-400 text-gray-900 font-semibold p-3 rounded shadow hover:bg-yellow-500 transition">
+          Request Callback
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="bg-gray-100 py-20" id="services">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-10 text-center">Our Services</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+          <h4 class="text-xl font-semibold mb-2">Company Registration</h4>
+          <p class="text-gray-600">Private limited, LLP, OPC, partnerships & more.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+          <h4 class="text-xl font-semibold mb-2">GST & Taxation</h4>
+          <p class="text-gray-600">GST registration, filing & compliance support.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+          <h4 class="text-xl font-semibold mb-2">Accounting & CA</h4>
+          <p class="text-gray-600">Bookkeeping, audits & professional CA services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-20 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center">Why Choose Us?</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div data-aos="fade-up">
+        <h4 class="text-4xl font-bold text-yellow-500">10+</h4>
+        <p class="text-gray-600">Years of Experience</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-4xl font-bold text-yellow-500">5000+</h4>
+        <p class="text-gray-600">Clients Served</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-4xl font-bold text-yellow-500">99%</h4>
+        <p class="text-gray-600">Client Satisfaction</p>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ Section -->
+<section class="container mx-auto px-6 py-20 bg-white">
+  <h3 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h3>
+  <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">
+    Here are answers to the most common questions about our services.
+  </p>
+
+  <div class="max-w-3xl mx-auto space-y-4">
+    <!-- Item 1 -->
+    <div class="accordion-item bg-gray-50 rounded-lg shadow fade-in">
+      <div class="accordion-header flex justify-between items-center">
+        <span>How long does company registration take?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="accordion-body">
+        Usually, it takes 7–10 working days depending on the type of company and government approvals.
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item bg-gray-50 rounded-lg shadow fade-in">
+      <div class="accordion-header flex justify-between items-center">
+        <span>Do you handle GST return filing?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="accordion-body">
+        Yes, we provide GST registration as well as monthly and yearly return filing support.
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="accordion-item bg-gray-50 rounded-lg shadow fade-in">
+      <div class="accordion-header flex justify-between items-center">
+        <span>Can I get a free consultation before starting?</span>
+        <span class="icon">+</span>
+      </div>
+      <div class="accordion-body">
+        Absolutely. Just fill out our consultation form, and our experts will call you back at no cost.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h5 class="font-semibold text-white mb-3">Sujata Associates</h5>
+        <p>Your trusted partner in registration, GST, accounting & trademark solutions.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold text-white mb-3">Quick Links</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/index.html" class="hover:text-yellow-400">Home</a></li>
+          <li><a href="/services.html" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="/Company.html" class="hover:text-yellow-400">Company</a></li>
+          <li><a href="/contact.html" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold text-white mb-3">Contact</h5>
+        <p class="text-sm">📍 Pune, India</p>
+        <p class="text-sm">📞 +91 98765 43210</p>
+        <p class="text-sm">✉️ info@sujataassociates.com</p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 mt-8">© 2025 Sujata Associates. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+
+    // Mobile Menu
+    document.getElementById("mobileBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+
+    // Form (demo submission)
+    document.getElementById("consultForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("✅ Thank you! Our team will contact you shortly.");
+    });
+  </script>
+</body>
+
+</html>

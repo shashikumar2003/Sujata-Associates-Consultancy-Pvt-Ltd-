@@ -1,0 +1,28 @@
+/* Glow Button */
+.glow-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #22c55e;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2s infinite;
+}
+.glow-btn:hover {
+  transform: scale(1.05);
+  background: #16a34a;
+}
+
+/* Glow pulse animation */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4), 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(34, 197, 94, 0.8), 0 0 50px rgba(34, 197, 94, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4), 0 0 20px rgba(34, 197, 94, 0.3);
+  }
+}

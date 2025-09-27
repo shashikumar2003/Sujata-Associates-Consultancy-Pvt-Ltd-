@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trademark Registration - Company Branding</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+  <link rel="stylesheet" href="Company Branding.css" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .fade-item { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.5s forwards; }
+    @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-6 shadow-md">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">CA Services</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="hover:text-green-400">Home</a>
+        <a href="services.html" class="hover:text-green-400">Services</a>
+        <a href="company-branding.html" class="text-green-400 font-semibold">Company Branding</a>
+        <a href="contact.html" class="hover:text-green-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-600 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Trademark Registration</h2>
+      <p class="text-lg max-w-2xl mx-auto">
+        Secure your brand identity, protect your logo and business name with trademark registration.
+      </p>
+    </div>
+  </section>
+
+  <!-- Content -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h3 class="text-2xl font-semibold mb-4">Why Trademark Registration?</h3>
+        <p class="text-gray-700 mb-6">
+          A trademark ensures that your brand, logo, or slogan is legally protected from misuse or duplication.
+          It builds credibility and trust with your customers.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+          <li>Legal protection against brand misuse</li>
+          <li>Exclusive rights to use your logo/name</li>
+          <li>Boosts business credibility</li>
+          <li>Helps in expansion & franchising</li>
+        </ul>
+      </div>
+      <div data-aos="fade-left">
+        <img src="https://img.icons8.com/fluency/300/000000/trademark.png" alt="Trademark Registration" class="rounded-lg shadow-lg" />
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div class="mt-16" data-aos="fade-up">
+      <h3 class="text-2xl font-semibold mb-4">Process of Trademark Registration</h3>
+      <ol class="list-decimal list-inside space-y-2 text-gray-700">
+        <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="Trademark search.html" class="hover:text-yellow-600">Trademark search</a></li>
+        <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="Filing application.html" class="hover:text-yellow-600">Filing application</a></li>
+        <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="Examination by authorities.html" class="hover:text-yellow-600">Examination by authorities</a></li>
+        <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="Publication in journal.html" class="hover:text-yellow-600">Publication in journal</a></li>
+        <li class="fade-item flex items-center gap-2"><span class="text-green-400">✅</span><a href="Approval & certification.html" class="hover:text-yellow-600">Approval & certification</a></li>
+      </ol>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-12 text-center" data-aos="zoom-in">
+      <a href="contact.html" class="bg-green-500 text-white px-6 py-3 rounded-lg shadow hover:bg-green-600 transition">
+        Get Started
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8 mt-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 CA Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+</body>
+</html>

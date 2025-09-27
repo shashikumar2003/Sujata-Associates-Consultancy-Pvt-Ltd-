@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sujata Associates — Legal Services</title>
+  <meta name="description" content="Explore our legal services including Cyber Security, Criminal Law, Property Registration, and Legal Drafting." />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* fade + slide animation */
+    .fade-slide {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    .fade-slide.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/index.html" class="flex items-center gap-3 group">
+        <div class="nav-logo">
+          <img src="https://sujataassociates.com/images/Logo-new-final.png" width="140" alt="Sujata Associates Logo">
+        </div>
+        <h1 class="text-xl font-semibold group-hover:text-yellow-600">Sujata Associates</h1>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm font-medium">
+        <a href="/index.html" class="hover:text-yellow-600">Home</a>
+        <a href="legal.html" class="text-yellow-600 font-semibold">Legal Services</a>
+        <a href="CA.html" class="hover:text-yellow-600">CA Services</a>
+        <a href="Company.html" class="hover:text-yellow-600">Company Branding</a>
+        <a href="Other.html" class="hover:text-yellow-600">Other Services</a>
+      </nav>
+      <button id="mobileBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t shadow px-6 py-4 space-y-3">
+      <a href="/index.html" class="hover:text-yellow-600">Home</a>
+      <a href="legal.html" class="text-yellow-600 font-semibold">Legal Services</a>
+      <a href="CA.html" class="hover:text-yellow-600">CA Services</a>
+      <a href="Company.html" class="hover:text-yellow-600">Company Branding</a>
+      <a href="Other.html" class="hover:text-yellow-600">Other Services</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-yellow-400 text-white py-16 text-center relative">
+    <h2 class="text-4xl font-extrabold mb-4">Our Legal Services</h2>
+    <p class="text-lg">Expert legal solutions for businesses and individuals — handled with professionalism.</p>
+
+    <!-- Scroll Down Button -->
+    <button id="scrollDownBtn" class="absolute left-1/2 -bottom-6 transform -translate-x-1/2 bg-white text-yellow-500 rounded-full shadow-lg p-3 hover:bg-gray-100 transition">
+      ↓
+    </button>
+  </section>
+
+  <!-- Legal Services List -->
+  <main class="container mx-auto px-6 py-20 space-y-16">
+
+    <!-- Cyber Security -->
+    <div id="first-service" class="fade-slide bg-white shadow-lg rounded-xl p-8">
+      <h3 class="text-2xl font-bold mb-4 text-yellow-600">1. Cyber Security</h3>
+      <p class="text-gray-600">We provide cyber security legal consulting, compliance checks, and defense strategies to protect your digital assets and data integrity.</p>
+    </div>
+
+    <!-- Criminal Law -->
+    <div class="fade-slide bg-white shadow-lg rounded-xl p-8">
+      <h3 class="text-2xl font-bold mb-4 text-yellow-600">2. Criminal Law</h3>
+      <p class="text-gray-600">Our expert lawyers handle criminal law cases, offering advice, representation, and support throughout the legal process.</p>
+    </div>
+
+    <!-- Property Registration -->
+    <div class="fade-slide bg-white shadow-lg rounded-xl p-8">
+      <h3 class="text-2xl font-bold mb-4 text-yellow-600">3. Property Registration</h3>
+      <p class="text-gray-600">We simplify property registration procedures, ensuring all documentation and compliance are completed efficiently and legally.</p>
+    </div>
+
+    <!-- Legal Drafting -->
+    <div class="fade-slide bg-white shadow-lg rounded-xl p-8">
+      <h3 class="text-2xl font-bold mb-4 text-yellow-600">4. Legal Drafting</h3>
+      <p class="text-gray-600">Our drafting experts prepare contracts, agreements, and other legal documents with precision and compliance with Indian laws.</p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 mt-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-6">
+      <div>
+        <h5 class="font-semibold text-white">Sujata Associates</h5>
+        <p class="text-sm">Trusted legal and financial solutions under one roof.</p>
+      </div>
+      <div class="text-sm space-y-2">
+        <p>📍 Office: Pune, India</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ info@sujataassociates.com</p>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 mt-6">© 2025 Sujata Associates. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile Menu Toggle
+    document.getElementById("mobileBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.toggle("hidden");
+    });
+
+    // Scroll Animation
+    const faders = document.querySelectorAll(".fade-slide");
+    const options = { threshold: 0.2 };
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          obs.unobserve(entry.target);
+        }
+      });
+    }, options);
+    faders.forEach(el => observer.observe(el));
+
+    // Scroll Down Button
+    document.getElementById("scrollDownBtn").addEventListener("click", () => {
+      document.getElementById("first-service").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>
